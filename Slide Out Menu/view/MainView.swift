@@ -62,16 +62,26 @@ struct MainView: View {
                 
                 Home()
                     .opacity(index == "Home" ? 1 : 0)
-                Orders()
-                    .opacity(index == "Orders" ? 1 : 0)
-                Wishlist()
-                    .opacity(index == "Wishlist" ? 1 : 0)
-                SavedCards()
-                    .opacity(index == "Saved Cards" ? 1 : 0)
-                Settings()
-                    .opacity(index == "Settings" ? 1 : 0)
-                Help()
-                    .opacity(index == "Help" ? 1 : 0)
+                DashboardContentView()
+//                Orders()
+                    .opacity(index == "Dashboards" ? 1 : 0)
+//                Wishlist()
+                ShoesContentView()
+                    .opacity(index == "Shoes" ? 1 : 0)
+//                SavedCards()
+                StackedContentView()
+                    .opacity(index == "Stacked Carousel" ? 1 : 0)
+//                Settings()
+                VPNContentView()
+                    .opacity(index == "VPN" ? 1 : 0)
+//                Help()
+                
+                
+               
+                VecpndPNContentView()
+                    .opacity(index ==  "Second VPN" ? 1 : 0)
+//                PULLContentView()
+//                    .opacity(index == "Pull To Refresh" ? 1 : 0)
             }
             
         }
